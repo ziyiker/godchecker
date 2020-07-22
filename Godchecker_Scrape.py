@@ -39,7 +39,7 @@ for i in url_list:
 
 #Creating the list for each individual god's url
 indiv_urls = []
-for i in mythology_url[:1]:
+for i in mythology_url:
     index = requests.get(i)
     index_soup = BeautifulSoup(index.text, "html.parser")
     index.close()
